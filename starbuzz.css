@@ -7,37 +7,40 @@ body {
 
 #header {
   background-color: #675c47;
-  margin:           10px;
+  margin:           10px 10PX 0PX 10PX;
   height:           108px;
 }
 
 #main {
+  display: table-cell;
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 330px 10px 10px;
+  /* margin:           0px 330px 10px 10px; */
+  vertical-align: top;
 }
 
 #sidebar {
+  display: table-cell;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 10px 10px 10px;
-  /* position: absolute; */
+  /* margin:           0px 10px 10px 10px;
+  position: absolute; 
   top: 128px;
   right: 0px;
-  width: 280px;
-  float: right;
-}
+  width: 280px;*/
+  vertical-align: top;
+} 
 
 #footer {
   background-color: #675c47;
   color:            #efe5d0;
   text-align:       center;
   padding:          15px;
-  margin:           10px;
+  margin:           0PX 10px 10PX 10PX;
   font-size:        90%;
-  clear: right;
+  /* clear: right; */
 }
 
 h1 {
@@ -69,4 +72,12 @@ a:visited {
   background-color: #675c47;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
+div#tableContainer{
+  /* display: table; */
+  border-spacing :10px;
+}
+/* div#tableRow{
+  display: table-row;
+} */
